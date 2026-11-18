@@ -1,12 +1,13 @@
 # NeLD-BA: Neural LiDAR Bundle Adjustment
 
+[![RA-L](https://img.shields.io/badge/IEEE%20RA--L-2026-00629B.svg)](https://doi.org/10.1109/LRA.2026.3754300)
 [![arXiv](https://img.shields.io/badge/arXiv-2607.04169-b31b1b.svg)](https://arxiv.org/abs/2607.04169)
 
-Official implementation of **Neural LiDAR Bundle Adjustment**.
+Official implementation of **Neural LiDAR Bundle Adjustment** (IEEE Robotics and Automation Letters, 2026).
 
 Chin Yung Anson Hon, Kaicheng Zhang, Sen Wang — Imperial College London
 
-[[Paper]](https://arxiv.org/abs/2607.04169)
+[[Paper (IEEE RA-L)]](https://doi.org/10.1109/LRA.2026.3754300) [[arXiv]](https://arxiv.org/abs/2607.04169)
 
 ## Overview
 
@@ -109,19 +110,19 @@ The initial poses come from FAST-LIO2. The ground truth is the survey-grade maps
 
 ## Citation
 
-If you find this work useful, please cite:
+If you find this work useful, please cite our RA-L paper:
 
 ```bibtex
-@misc{hon2026neldba,
-  title         = {Neural LiDAR Bundle Adjustment},
-  author        = {Hon, Chin Yung Anson and Zhang, Kaicheng and Wang, Sen},
-  year          = {2026},
-  eprint        = {2607.04169},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO},
-  url           = {https://arxiv.org/abs/2607.04169}
+@article{hon2026neldba,
+  title   = {Neural LiDAR Bundle Adjustment},
+  author  = {Hon, Chin Yung Anson and Zhang, Kaicheng and Wang, Sen},
+  journal = {IEEE Robotics and Automation Letters},
+  year    = {2026},
+  doi     = {10.1109/LRA.2026.3754300}
 }
 ```
+
+A free version of the paper is available on [arXiv](https://arxiv.org/abs/2607.04169).
 
 ## Acknowledgements
 
