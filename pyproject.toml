@@ -1,0 +1,40 @@
+[project]
+name = "neld-ba"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "configargparse==1.7.1",
+    "dash==3.2.0",
+    "einops==0.8.1",
+    "matplotlib==3.10.5",
+    "numpy==2.1.2",
+    "open3d==0.19.0",
+    "pandas==2.3.1",
+    "plotly==6.3.0",
+    "plyfile==1.1.2",
+    "pymcubes>=0.1.6",
+    "pyntcloud==0.3.1",
+    "pyquaternion==0.9.9",
+    "pyyaml==6.0.2",
+    "rosbags>=0.11.3",
+    "scikit-learn==1.7.1",
+    "scipy==1.16.1",
+    "seaborn==0.13.2",
+    "toml==0.10.2",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "tqdm==4.67.1",
+    "trimesh>=4.12.2",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+torchvision = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

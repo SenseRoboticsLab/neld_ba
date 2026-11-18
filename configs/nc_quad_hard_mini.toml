@@ -1,0 +1,49 @@
+# Default configuration for src/train_neld_ba.py
+[data_io]
+input_dir = "./data/nc_quad_hard_mini/"
+output_dir = "./output/"         # results go to <output_dir>/<job_name>/
+job_name = "nc_quad_hard_mini"
+checkpoint_interval_iter = 10000   # save nerf/pose checkpoints every N iterations (the final iteration is always saved)
+
+[preperation]                   
+batch_size = 64
+vox_down_meter = 0.05
+
+# learning rates: each one decays exponentially from its start value to *_end over num_iter
+nerf_learning_rate = 5e-5
+nerf_learning_rate_end = 2.5e-5
+pose_rotation_learning_rate = 1e-5
+pose_rotation_learning_rate_end = 1e-6
+pose_translation_learning_rate = 2e-5
+pose_translation_learning_rate_end = 2e-6
+
+# positional encoding / network
+pos_emb_dim = 15
+dir_emb_dim = 4
+hidden_dim = 512
+
+# BARF coarse-to-fine schedule
+start_barf_iter = 0
+end_barf_iter = 120000
+start_learn_pose_L = 6          # start learning pose when the 6th fourier spectrum is activated
+
+[training]
+num_iter = 160000
+hier_sampling = true
+learn_rot = true
+learn_trans = true
+end_learn_pose_iter = 140000
+
+# loss weights
+lambda_d = 1.0
+lambda_h = 1.0
+lambda_coarse = 0.1
+lambda_fine = 1.0
+
+# volume sampling bin counts grow from the start value to *_final as the BARF spectrum opens
+num_coarse_bins_start = 32
+num_coarse_bins_end = 64
+num_fine_bins_start = 16
+num_fine_bins_end = 32
+near_plane = 0.0
+far_plane = 1.5                 # overrided at runtime by the longest ray in the data + 0.1

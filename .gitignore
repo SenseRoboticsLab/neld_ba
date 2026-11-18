@@ -1,0 +1,82 @@
+# settings
+settings.json
+.vscode/
+
+configs/*
+!configs/default.toml
+!configs/nc_quad_hard_mini.toml
+data/*
+!data/nc_quad_hard_mini/
+
+# local stuff
+.DS_Store
+output/
+
+### uv / Python project ###
+# Virtual environment (uv creates this by default)
+.venv/
+venv/
+.env
+
+# uv cache
+.uv_cache/
+
+# Note: uv.lock and .python-version are intentionally NOT ignored.
+# Commit them so installs are reproducible across machines.
+
+
+### good practice ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# package init files
+__init__.py
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
