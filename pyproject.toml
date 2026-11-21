@@ -3,7 +3,7 @@ name = "neld-ba"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-license = "MIT"
+license = "GPL-3.0-only"
 requires-python = ">=3.12"
 dependencies = [
     "configargparse==1.7.1",

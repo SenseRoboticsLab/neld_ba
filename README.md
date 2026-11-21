@@ -130,4 +130,6 @@ This code builds on ideas from [BARF](https://github.com/chenhsuanlin/bundle-adj
 
 ## License
 
-The code in this repository is released under the [MIT License](LICENSE).
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+Copyright (C) 2026 Chin Yung Anson Hon
